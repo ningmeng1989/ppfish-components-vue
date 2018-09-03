@@ -2,12 +2,12 @@
  * Created by JianBo.Wang on 2017/7/12.
  */
 import axios from 'axios'
-import * as tool from '../util/tool'
+// import * as tool from '../util/tool'
 import qs from 'qs'
 
 axios.defaults.timeout = 60000
 axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded;charset=UTF-8'
-axios.defaults.baseURL = '/dt-serviceplatform'
+axios.defaults.baseURL = ''
 
 const downloadUrl = url => {
   let a = document.createElement('a')
@@ -24,10 +24,10 @@ const downloadUrl = url => {
 axios.interceptors.request.use((config) => {
   return config
 }, (error) => {
-  tool.toast({
-    type: 'error',
-    title: '错误的传参'
-  })
+  // tool.toast({
+  //   type: 'error',
+  //   title: '错误的传参'
+  // })
   return Promise.reject(error)
 })
 
@@ -81,10 +81,10 @@ axios.interceptors.response.use((res) => {
   // })
   return Promise.reject(res)
 }, (error) => {
-  tool.toast({
-    type: 'error',
-    title: error.response.data.message
-  })
+  // tool.toast({
+  //   type: 'error',
+  //   title: error.response.data.message
+  // })
   return Promise.reject(error)
 })
 

@@ -1,0 +1,49 @@
+{
+  "code": "success",
+  "message": "成功",
+  "data": {
+    "navMenu": [
+      {
+        "id": "1",
+        "parentId": "-1",
+        "path": "/",
+        "title": "主页",
+        "iconClass": "el-icon-message",
+        "hasLeaf": false,
+        "children": null,
+        "type": "1"
+      },
+      {
+        "id": "2",
+        "parentId": "-1",
+        "path": "/Cpnt",
+        "title": "组件",
+        "iconClass": "el-icon-message",
+        "hasLeaf": true,
+        "children": [
+          {
+            "id": "3",
+            "parentId": "2",
+            "path": "/Cpnt/TreeSelect",
+            "title": "TreeSelect",
+            "iconClass": "el-icon-setting",
+            "hasLeaf": false,
+            "children": null,
+            "type": "1"
+          },
+          {
+            "id": "4",
+            "parentId": "2",
+            "path": "/Cpnt/NumberCounter",
+            "title": "NumberCounter",
+            "iconClass": "el-icon-setting",
+            "hasLeaf": false,
+            "children": null,
+            "type": "1"
+          }
+        ],
+        "type": "1"
+      }
+    ]
+  }
+}
