@@ -40,6 +40,16 @@
             "hasLeaf": false,
             "children": null,
             "type": "1"
+          },
+          {
+            "id": "5",
+            "parentId": "2",
+            "path": "/Cpnt/ScoreBoard",
+            "title": "ScoreBoard",
+            "iconClass": "el-icon-setting",
+            "hasLeaf": false,
+            "children": null,
+            "type": "1"
           }
         ],
         "type": "1"

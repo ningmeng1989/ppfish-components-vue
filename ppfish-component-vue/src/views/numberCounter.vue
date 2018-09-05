@@ -26,33 +26,28 @@
 </template>
 
 <script>
-  import numberCounter from '@/components/numberCounter/index'
+import numberCounter from '@/components/numberCounter/index'
 
-  export default {
-    name: 'index',
-    components: {
-      numberCounter
-    },
-    data () {
-      return {
-        commas: true,
-        timeout: 500,
-        steps: 10,
-        inputValue: 0,
-        displayValue: 0
-      }
-    },
-//    computed: {
-//      displayValue: function () {
-//        return parseInt(this.inputValue, 10) || 0
-//      }
-//    },
-    methods: {
-      submit () {
-        this.displayValue = parseInt(this.inputValue, 10) || 0
-      }
+export default {
+  name: 'index',
+  components: {
+    numberCounter
+  },
+  data () {
+    return {
+      commas: true,
+      timeout: 500,
+      steps: 10,
+      inputValue: 0,
+      displayValue: 0
+    }
+  },
+  methods: {
+    submit () {
+      this.displayValue = parseInt(this.inputValue, 10) || 0
     }
   }
+}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

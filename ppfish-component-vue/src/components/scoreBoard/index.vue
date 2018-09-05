@@ -1,13 +1,13 @@
 <template lang='pug'>
 	.score-board-list
-		score-board(v-for='(i, $index) in renderArr' :key="$index" :no="i")
+		score-board-item(v-for='(i, $index) in renderArr' :key="$index" :no="i")
 </template>
 
 <script>
-	import ScoreBoard from '@/components/score-board'
+	import scoreBoardItem from '@/components/scoreBoard/scoreBoardItem'
 	export default {
-		name: "score-board-list",
-		components:{ScoreBoard},
+		name: "score-board",
+		components:{scoreBoardItem},
 		props: ['count'],
 		computed: {
 			renderArr: function () {

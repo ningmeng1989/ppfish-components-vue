@@ -22,6 +22,11 @@ export default new Router({
       path: '/Cpnt/NumberCounter',
       name: 'NumberCount',
       component: () => import('../views/numberCounter.vue')
+    },
+    {
+      path: '/Cpnt/ScoreBoard',
+        name: 'ScoreBoard',
+      component: () => import('../views/scoreBoard.vue')
     }
     // {
     //   path: '/about',
